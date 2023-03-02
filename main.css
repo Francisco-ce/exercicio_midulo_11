@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header, footer{
+    background-color: #0000FF;
+    padding-top: 16px;
+    color: #FFFAFA;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container ,
+footer > .container {
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #FFFAFA;
+    display: block;
+    margin-bottom: 4px;
+}
+
+nav {
+    background-color:  #FF8C00;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #FFFAFA
+}
+section {
+    padding: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+.lista-pets {
+    flex-wrap: wrap;
+}
+
+.lista-pets li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-pets img {
+    max-width: 100%;
+}
+
+.lista-pets li h3 {
+    margin: 10px 10px 10px 0;
+}
+
+.lista-central {
+    margin: 0 5%;
+}
+
+button {
+    width: 80%;
+    background-color: #FF8C00;
+    color: #FFFAFA;
+    display: block;
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 16px;
+    border: none;
+    border-radius: 6px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img{
+    height: 32px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    display: block;
+}
+
+.form-campo input, 
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 4px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 70%;
+}
+
+@media screen and (max-width: 640px) {
+    .lista-pets li { 
+        max-width: 100%;
+    }
+
+    .lista-central {
+        margin: 0;
+}
+
+    nav li {
+        margin-right: 10px;
+        font-size: .7rem;
+
+    }
+}
+
+
+
